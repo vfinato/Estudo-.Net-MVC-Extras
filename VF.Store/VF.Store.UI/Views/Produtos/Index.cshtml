@@ -1,0 +1,27 @@
+﻿
+<h2>listagem produtos</h2>
+
+<table>
+    <thead>
+        <tr>
+            <th>Nome</th>
+            <th>Preço</th>
+            <th>Tipo</th>
+            <th>Quantidade</th>
+            <th>Data do Cadastro</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var p in Model)
+        {
+            <tr>
+                <td>@p.Nome</td>
+                <td>@p.Preco</td>
+                <td>@p.Tipo</td>
+                <td>@p.Quantidade</td>
+                <td>@p.DataCadastro</td>
+            </tr>
+        }
+    </tbody>
+
+</table>
