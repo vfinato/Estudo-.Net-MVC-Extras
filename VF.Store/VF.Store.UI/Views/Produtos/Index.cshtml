@@ -1,30 +1,71 @@
-﻿
+﻿@using VF.Store.UI.Models
+
 <h2>listagem produtos</h2>
 
 <div>
-    <a href="~/Produtos/Add">Novo Produto</a>
+    <a href="~/Produtos/AddEdit">Novo Produto</a>
 </div>
 <table>
     <thead>
-        <tr>
-            <th>Nome</th>
-            <th>Preço</th>
-            <th>Tipo</th>
-            <th>Quantidade</th>
-            <th>Data do Cadastro</th>
-        </tr>
+    <tr>
+        <th>Nome</th>
+        <th>Preço</th>
+        <th>Tipo</th>
+        <th>Quantidade</th>
+        <th>Data do Cadastro</th>
+        <th></th>
+    </tr>
     </thead>
     <tbody>
-        @foreach (var p in Model)
-        {
-            <tr>
-                <td>@p.Nome</td>
-                <td>@p.Preco</td>
-                <td>@p.Tipo</td>
-                <td>@p.Quantidade</td>
-                <td>@p.DataCadastro</td>
-            </tr>
-        }
+    @foreach (var p in Model)
+    {
+        <tr id ="produto-@p.Id">
+            <td>@p.Nome</td>
+            <td>@p.Preco</td>
+            <td>@p.Tipo</td>
+            <td>@p.Quantidade</td>
+            <td>@p.DataCadastro</td>
+            <td>
+                <a href="~/Produtos/AddEdit/@p.Id">Editar</a>
+                <button onclick="DelProd(@p.Id, '@p.Nome')">Excluir</button>
+            </td>
+        </tr>
+    }
     </tbody>
 
 </table>
+
+<script>
+    function DelProd(id, nome) {
+        let resp = confirm(`Deseja excluir o produto ${nome}?`);
+        if (resp) {
+            //console.log(`excluir produito de id ${id}`);
+            ConfirmaDelete(id);
+        }
+    }
+
+
+    function ConfirmaDelete(id) {
+        let xhr = new XMLHttpRequest();
+        const url = `/Produtos/DeleteProduto/${id}`;
+
+        xhr.onreadystatechange = function() {
+            if (this.readyState === 4 && this.status === 404) {
+                alert('Produto Não Localizado!');
+            }
+
+            if (this.readyState === 4 && this.status === 200) {
+                //remover do html
+                let tr = document.querySelector(`#produto-${id}`);
+                if (tr !== null) {
+                    tr.remove();
+                }
+                alert("Produto Excluído com sucesso!");
+            }
+        }
+
+        xhr.open('get', url);
+        xhr.send();
+
+    }
+</script>

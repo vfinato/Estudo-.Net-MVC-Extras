@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
@@ -10,30 +11,61 @@ namespace VF.Store.UI.Controllers
 {
     public class ProdutosController : Controller
     {
+        private readonly VFStoreDataContext _context = new VFStoreDataContext();
+
         public ViewResult Index()
         {
-            IList<Produto> produtos = null;
-            using (var context = new VFStoreDataContext())
-            {
-                produtos = context.Produtos.ToList();
-            }
-            
+
+            var produtos = _context.Produtos.ToList();
             return View(produtos);
         }
 
         [HttpGet]
-        public ViewResult Add()
+        public ViewResult AddEdit(int? id)
         {
-            return View();
+            var produto = new Produto();
+            if (id != null)
+            {
+                produto = _context.Produtos.Find(id);
+            }
+            return View(produto);
         }
-        
+
         [HttpPost]
-        public ViewResult Add(Produto produto)
+        public ActionResult AddEdit(Produto produto)
         {
-            //todo add na tabela
-            return View();
+            //todo validar
+            if (produto.Id == 0)
+            {
+                _context.Produtos.Add(produto);
+            }
+            else
+            {
+                _context.Entry(produto).State = EntityState.Modified;
+            }
+            _context.SaveChanges();
+
+            return RedirectToAction("Index");
+        }
+
+        public ActionResult DeleteProduto(int id)
+        {
+            var produto = _context.Produtos.Find(id);
+            if (produto == null)
+            {
+                return HttpNotFound();
+            }
+            _context.Produtos.Remove(produto);
+            _context.SaveChanges();
+
+
+            return null;
         }
 
 
+        protected override void Dispose(bool disposing)
+        {
+            _context.Dispose();
+        }
     }
 }
