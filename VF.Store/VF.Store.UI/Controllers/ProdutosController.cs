@@ -37,18 +37,25 @@ namespace VF.Store.UI.Controllers
         [HttpPost]
         public ActionResult AddEdit(Produto produto)
         {
-            //todo validar
-            if (produto.Id == 0)
+            if (ModelState.IsValid)
             {
-                _context.Produtos.Add(produto);
+                {
+                    //todo validar
+                }
+                if (produto.Id == 0)
+                {
+                    _context.Produtos.Add(produto);
+                }
+                else
+                {
+                    _context.Entry(produto).State = EntityState.Modified;
+                }
+                _context.SaveChanges();
+                return RedirectToAction("Index");
             }
-            else
-            {
-                _context.Entry(produto).State = EntityState.Modified;
-            }
-            _context.SaveChanges();
-
-            return RedirectToAction("Index");
+            var tipos = _context.TipoDeProdutos.ToList();
+            ViewBag.Tipos = tipos;
+            return View(produto);
         }
 
         public ActionResult DeleteProduto(int id)

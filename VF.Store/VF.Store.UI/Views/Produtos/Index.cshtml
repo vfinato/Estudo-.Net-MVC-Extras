@@ -7,7 +7,7 @@
 <h2>@ViewBag.Title</h2>
 
 <div class="mb-3">
-    <a href="~/Produtos/AddEdit" class="btn btn-outline-primary">Novo Produto</a>
+    <a href="@Url.Action("AddEdit")" class="btn btn-outline-primary">Novo Produto</a>
 </div>
 
 <div class="table-responsive">
@@ -33,7 +33,7 @@
                     <td>@p.DataCadastro</td>
                     <td>
                         <div class="btn-group">
-                            <a href="~/Produtos/AddEdit/@p.Id" class="btn btn-outline-success btn-sm"><i class="far fa-edit"></i></a>
+                            <a href="@Url.Action("AddEdit", new {id = p.Id})" class="btn btn-outline-success btn-sm"><i class="far fa-edit"></i></a>
                             <button class="btn btn-outline-danger btn-sm" onclick="DelProd(@p.Id, '@p.Nome')"><i class="far fa-trash-alt"></i></button>
                         </div>
                     </td>
