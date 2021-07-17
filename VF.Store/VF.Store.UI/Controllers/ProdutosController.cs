@@ -28,6 +28,9 @@ namespace VF.Store.UI.Controllers
             {
                 produto = _context.Produtos.Find(id);
             }
+
+            var tipos = _context.TipoDeProdutos.ToList();
+            ViewBag.Tipos = tipos;
             return View(produto);
         }
 

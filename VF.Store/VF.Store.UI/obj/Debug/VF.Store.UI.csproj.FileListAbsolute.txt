@@ -50,6 +50,8 @@ C:\Users\Finato\Documents\Pessoal\VF.Store\VF.Store.UI\bin\roslyn\vbc.exe.config
 C:\Users\Finato\Documents\Pessoal\VF.Store\VF.Store.UI\bin\roslyn\vbc.rsp
 C:\Users\Finato\Documents\Pessoal\VF.Store\VF.Store.UI\bin\roslyn\VBCSCompiler.exe
 C:\Users\Finato\Documents\Pessoal\VF.Store\VF.Store.UI\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Finato\Documents\Pessoal\VF.Store\VF.Store.UI\bin\EntityFramework.dll
+C:\Users\Finato\Documents\Pessoal\VF.Store\VF.Store.UI\bin\EntityFramework.SqlServer.dll
 C:\Users\Finato\Documents\Pessoal\VF.Store\VF.Store.UI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
 C:\Users\Finato\Documents\Pessoal\VF.Store\VF.Store.UI\bin\Microsoft.Web.Infrastructure.dll
 C:\Users\Finato\Documents\Pessoal\VF.Store\VF.Store.UI\bin\System.Web.Helpers.dll
@@ -58,6 +60,8 @@ C:\Users\Finato\Documents\Pessoal\VF.Store\VF.Store.UI\bin\System.Web.Razor.dll
 C:\Users\Finato\Documents\Pessoal\VF.Store\VF.Store.UI\bin\System.Web.Webpages.Deployment.dll
 C:\Users\Finato\Documents\Pessoal\VF.Store\VF.Store.UI\bin\System.Web.Webpages.dll
 C:\Users\Finato\Documents\Pessoal\VF.Store\VF.Store.UI\bin\System.Web.Webpages.Razor.dll
+C:\Users\Finato\Documents\Pessoal\VF.Store\VF.Store.UI\bin\EntityFramework.xml
+C:\Users\Finato\Documents\Pessoal\VF.Store\VF.Store.UI\bin\EntityFramework.SqlServer.xml
 C:\Users\Finato\Documents\Pessoal\VF.Store\VF.Store.UI\bin\System.Web.Razor.xml
 C:\Users\Finato\Documents\Pessoal\VF.Store\VF.Store.UI\bin\System.Web.Webpages.xml
 C:\Users\Finato\Documents\Pessoal\VF.Store\VF.Store.UI\bin\System.Web.Webpages.Deployment.xml
@@ -71,12 +75,7 @@ C:\Users\Finato\Documents\Pessoal\VF.Store\VF.Store.UI\bin\pt-br\System.Web.Webp
 C:\Users\Finato\Documents\Pessoal\VF.Store\VF.Store.UI\bin\pt-br\System.Web.Webpages.Razor.resources.dll
 C:\Users\Finato\Documents\Pessoal\VF.Store\VF.Store.UI\bin\pt-br\System.Web.Helpers.resources.dll
 C:\Users\Finato\Documents\Pessoal\VF.Store\VF.Store.UI\bin\pt-br\System.Web.Mvc.resources.dll
-C:\Users\Finato\Documents\Pessoal\VF.Store\VF.Store.UI\obj\Debug\VF.Store.UI.csprojAssemblyReference.cache
 C:\Users\Finato\Documents\Pessoal\VF.Store\VF.Store.UI\obj\Debug\VF.Store.UI.csproj.CoreCompileInputs.cache
 C:\Users\Finato\Documents\Pessoal\VF.Store\VF.Store.UI\obj\Debug\VF.Store.UI.csproj.CopyComplete
 C:\Users\Finato\Documents\Pessoal\VF.Store\VF.Store.UI\obj\Debug\VF.Store.UI.dll
 C:\Users\Finato\Documents\Pessoal\VF.Store\VF.Store.UI\obj\Debug\VF.Store.UI.pdb
-C:\Users\Finato\Documents\Pessoal\VF.Store\VF.Store.UI\bin\EntityFramework.dll
-C:\Users\Finato\Documents\Pessoal\VF.Store\VF.Store.UI\bin\EntityFramework.SqlServer.dll
-C:\Users\Finato\Documents\Pessoal\VF.Store\VF.Store.UI\bin\EntityFramework.xml
-C:\Users\Finato\Documents\Pessoal\VF.Store\VF.Store.UI\bin\EntityFramework.SqlServer.xml
