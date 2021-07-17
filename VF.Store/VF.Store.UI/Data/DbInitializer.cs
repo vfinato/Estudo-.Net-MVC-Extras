@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Data.Entity;
+using VF.Store.UI.Infraestrutura;
 using VF.Store.UI.Models;
 
 namespace VF.Store.UI.Data
@@ -25,6 +26,15 @@ namespace VF.Store.UI.Data
             };
 
             context.Produtos.AddRange(produtos);
+
+            context.Usuarios.Add(new Usuario()
+            {
+                Nome = "Vítor Finato",
+                Email = "vitor.finato@outlook.com",
+                Senha = "123456".Encrypt()
+            });
+
+
             context.SaveChanges();
 
         }

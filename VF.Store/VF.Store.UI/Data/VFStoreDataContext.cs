@@ -14,6 +14,8 @@ namespace VF.Store.UI.Data
 
         public DbSet<TipoDeProduto> TipoDeProdutos { get; set; }
 
+        public DbSet<Usuario> Usuarios { get; set; }
+
     }
 
 

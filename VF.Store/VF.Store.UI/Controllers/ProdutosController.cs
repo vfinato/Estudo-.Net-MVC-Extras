@@ -1,14 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Data.Entity;
+﻿using System.Data.Entity;
 using System.Linq;
-using System.Web;
 using System.Web.Mvc;
 using VF.Store.UI.Data;
 using VF.Store.UI.Models;
 
 namespace VF.Store.UI.Controllers
 {
+    [Authorize]
     public class ProdutosController : Controller
     {
         private readonly VFStoreDataContext _context = new VFStoreDataContext();

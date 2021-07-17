@@ -18,6 +18,9 @@ body {
     background-color: #f5f5f5;
 }
 
+.footer-custom span {
+    color: #ffffff !important;
+}
 
 /* Custom page CSS
 -------------------------------------------------- */

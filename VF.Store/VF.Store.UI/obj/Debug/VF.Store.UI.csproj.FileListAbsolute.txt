@@ -79,4 +79,3 @@ C:\Users\Finato\Documents\Pessoal\VF.Store\VF.Store.UI\obj\Debug\VF.Store.UI.csp
 C:\Users\Finato\Documents\Pessoal\VF.Store\VF.Store.UI\obj\Debug\VF.Store.UI.csproj.CopyComplete
 C:\Users\Finato\Documents\Pessoal\VF.Store\VF.Store.UI\obj\Debug\VF.Store.UI.dll
 C:\Users\Finato\Documents\Pessoal\VF.Store\VF.Store.UI\obj\Debug\VF.Store.UI.pdb
-C:\Users\Finato\Documents\Pessoal\VF.Store\VF.Store.UI\obj\Debug\VF.Store.UI.csprojAssemblyReference.cache

@@ -1,0 +1,36 @@
+﻿@model LoginVM
+@{
+    ViewBag.Title = "Login";
+}
+
+<h2>@ViewBag.Title</h2>
+
+<div class="row">
+    <form class="col-md-6 col-sm-12" method="post">
+        <div class="mb-3">
+            <label>E-mail</label>
+            @Html.TextBoxFor(model => model.Email, new { @class = "form-control", autofocus = "" })
+            <small>@Html.ValidationMessageFor(model => Model.Email, null, new { @class = "text-danger" })</small>
+        </div>
+        <div class="mb-3">
+            <label>Senha</label>
+            @Html.PasswordFor(model => model.Senha, new { @class = "form-control", autofocus = "" })
+            <small>@Html.ValidationMessageFor(model => Model.Senha, null, new { @class = "text-danger" })</small>
+        </div>
+
+        <div class="mb-3 form-check">
+            @Html.CheckBoxFor(model => model.PermanecerLogado, new { @class = "form-check-input" })
+            @Html.LabelFor(model => model.PermanecerLogado)
+        </div>
+
+        <div class="mb-3">
+            <button class="btn btn-outline-secondary">Login</button>
+            <a class="btn btn-warning" href="@Url.Action("Index","Home")">Cancelar</a>
+        </div>
+    </form>
+</div>
+@section scripts{
+    <script src="~/Scripts/jquery.validate.min.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+    <script src="~/Scripts/bootstrap.validate.js"></script>
+}
