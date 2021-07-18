@@ -75,6 +75,7 @@ C:\Users\Finato\Documents\Pessoal\VF.Store\VF.Store.UI\bin\pt-br\System.Web.Webp
 C:\Users\Finato\Documents\Pessoal\VF.Store\VF.Store.UI\bin\pt-br\System.Web.Webpages.Razor.resources.dll
 C:\Users\Finato\Documents\Pessoal\VF.Store\VF.Store.UI\bin\pt-br\System.Web.Helpers.resources.dll
 C:\Users\Finato\Documents\Pessoal\VF.Store\VF.Store.UI\bin\pt-br\System.Web.Mvc.resources.dll
+C:\Users\Finato\Documents\Pessoal\VF.Store\VF.Store.UI\obj\Debug\VF.Store.UI.csprojAssemblyReference.cache
 C:\Users\Finato\Documents\Pessoal\VF.Store\VF.Store.UI\obj\Debug\VF.Store.UI.csproj.CoreCompileInputs.cache
 C:\Users\Finato\Documents\Pessoal\VF.Store\VF.Store.UI\obj\Debug\VF.Store.UI.csproj.CopyComplete
 C:\Users\Finato\Documents\Pessoal\VF.Store\VF.Store.UI\obj\Debug\VF.Store.UI.dll

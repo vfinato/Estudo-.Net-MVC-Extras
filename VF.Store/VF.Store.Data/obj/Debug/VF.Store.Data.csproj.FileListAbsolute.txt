@@ -1,0 +1,14 @@
+C:\Users\Finato\Documents\Pessoal\VF.Store\VF.Store.Data\bin\Debug\VF.Store.Data.dll.config
+C:\Users\Finato\Documents\Pessoal\VF.Store\VF.Store.Data\bin\Debug\VF.Store.Data.dll
+C:\Users\Finato\Documents\Pessoal\VF.Store\VF.Store.Data\bin\Debug\VF.Store.Data.pdb
+C:\Users\Finato\Documents\Pessoal\VF.Store\VF.Store.Data\bin\Debug\EntityFramework.dll
+C:\Users\Finato\Documents\Pessoal\VF.Store\VF.Store.Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Finato\Documents\Pessoal\VF.Store\VF.Store.Data\bin\Debug\VF.Store.Domain.dll
+C:\Users\Finato\Documents\Pessoal\VF.Store\VF.Store.Data\bin\Debug\VF.Store.Domain.pdb
+C:\Users\Finato\Documents\Pessoal\VF.Store\VF.Store.Data\bin\Debug\EntityFramework.xml
+C:\Users\Finato\Documents\Pessoal\VF.Store\VF.Store.Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Finato\Documents\Pessoal\VF.Store\VF.Store.Data\obj\Debug\VF.Store.Data.csprojAssemblyReference.cache
+C:\Users\Finato\Documents\Pessoal\VF.Store\VF.Store.Data\obj\Debug\VF.Store.Data.csproj.CoreCompileInputs.cache
+C:\Users\Finato\Documents\Pessoal\VF.Store\VF.Store.Data\obj\Debug\VF.Store.Data.csproj.CopyComplete
+C:\Users\Finato\Documents\Pessoal\VF.Store\VF.Store.Data\obj\Debug\VF.Store.Data.dll
+C:\Users\Finato\Documents\Pessoal\VF.Store\VF.Store.Data\obj\Debug\VF.Store.Data.pdb

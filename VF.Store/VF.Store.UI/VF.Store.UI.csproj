@@ -188,6 +188,7 @@
     <Compile Include="Controllers\ProdutosController.cs" />
     <Compile Include="Controllers\TesteController.cs" />
     <Compile Include="Data\DbInitializer.cs" />
+    <Compile Include="Infraestrutura\DecimalModelBinder.cs" />
     <Compile Include="Infraestrutura\Helpers.cs" />
     <Compile Include="Models\LoginVM.cs" />
     <Compile Include="Models\Usuario.cs" />

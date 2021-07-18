@@ -18,10 +18,12 @@
 
     <div class="mb-3">
         <label class="form-label">Preço:</label>
+        @{ Html.EnableClientValidation(false); }
         @Html.TextBoxFor(m => m.Preco, new { @class = "form-control" })
-        <small>
-            @Html.ValidationMessageFor(m => m.Preco, null, new { @class = "text-danger" })
-        </small>
+    <small>
+        @{ Html.EnableClientValidation(true); }
+        @Html.ValidationMessageFor(m => m.Preco, null, new { @class = "text-danger" })
+    </small>
     </div>
 
     <div class="mb-3">

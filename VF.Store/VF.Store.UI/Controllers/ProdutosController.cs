@@ -1,4 +1,5 @@
-﻿using System.Data.Entity;
+﻿using System;
+using System.Data.Entity;
 using System.Linq;
 using System.Web.Mvc;
 using VF.Store.UI.Data;
@@ -25,10 +26,14 @@ namespace VF.Store.UI.Controllers
             if (id != null)
             {
                 produto = _context.Produtos.Find(id);
+                produto.Preco = Math.Round(produto.Preco, 2);
             }
 
             var tipos = _context.TipoDeProdutos.ToList();
             ViewBag.Tipos = tipos;
+
+            
+
             return View(produto);
         }
 

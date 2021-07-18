@@ -1,0 +1,5 @@
+C:\Users\Finato\Documents\Pessoal\VF.Store\VF.Store.Domain\bin\Debug\VF.Store.Domain.dll
+C:\Users\Finato\Documents\Pessoal\VF.Store\VF.Store.Domain\bin\Debug\VF.Store.Domain.pdb
+C:\Users\Finato\Documents\Pessoal\VF.Store\VF.Store.Domain\obj\Debug\VF.Store.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Finato\Documents\Pessoal\VF.Store\VF.Store.Domain\obj\Debug\VF.Store.Domain.dll
+C:\Users\Finato\Documents\Pessoal\VF.Store\VF.Store.Domain\obj\Debug\VF.Store.Domain.pdb
