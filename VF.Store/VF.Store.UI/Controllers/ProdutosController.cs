@@ -1,9 +1,9 @@
 ﻿using System;
-using System.Data.Entity;
-using System.Linq;
 using System.Web.Mvc;
-using VF.Store.Data.EF;
-using VF.Store.Domain.Entities;
+using VF.Store.Domain.Contracts.Repositorios;
+using VF.Store.UI.ViewModels.Produtos.AddEdit;
+using VF.Store.UI.ViewModels.Produtos.AddEdit.Maps;
+using VF.Store.UI.ViewModels.Produtos.Index.Maps;
 
 
 namespace VF.Store.UI.Controllers
@@ -11,26 +11,42 @@ namespace VF.Store.UI.Controllers
     [Authorize]
     public class ProdutosController : Controller
     {
-        private readonly VFStoreDataContext _context = new VFStoreDataContext();
+        private readonly IProdutoRepositorio _produtoRepositorio;
+        private readonly ITipoDeProdutoRepositorio _tipoDeProdutoRepositorio;
+
+        //ctor removido pra criar injeção de dependencia no MVC
+        //public ProdutosController()
+        //{
+        //    _produtoRepositorio = new ProdutoRepositorioEF();
+        //    _tipoDeProdutoRepositorio = new TipoDeProdutoRepositorioEF();
+        //}
+
+        public ProdutosController(
+            IProdutoRepositorio produtoRepositorio, 
+            ITipoDeProdutoRepositorio tipoDeProdutoRepositorio)
+        {
+            _produtoRepositorio = produtoRepositorio;
+            _tipoDeProdutoRepositorio = tipoDeProdutoRepositorio;
+        }
 
         public ViewResult Index()
         {
 
-            var produtos = _context.Produtos.ToList();
+            var produtos = _produtoRepositorio.Get().ToProdutoIndexVm();
             return View(produtos);
         }
 
         [HttpGet]
         public ViewResult AddEdit(int? id)
         {
-            var produto = new Produto();
+            var produto = new ProdutoAddEditVM();
             if (id != null)
             {
-                produto = _context.Produtos.Find(id);
+                produto = _produtoRepositorio.Get((int)id).ToProdutoAddEditVm();
                 produto.Preco = Math.Round(produto.Preco, 2);
             }
 
-            var tipos = _context.TipoDeProdutos.ToList();
+            var tipos = _tipoDeProdutoRepositorio.Get();
             ViewBag.Tipos = tipos;
 
             
@@ -39,38 +55,35 @@ namespace VF.Store.UI.Controllers
         }
 
         [HttpPost]
-        public ActionResult AddEdit(Produto produto)
+        public ActionResult AddEdit(ProdutoAddEditVM produtoVM)
         {
+            var produto = produtoVM.ToProduto();
             if (ModelState.IsValid)
             {
-                {
-                    //todo validar
-                }
                 if (produto.Id == 0)
                 {
-                    _context.Produtos.Add(produto);
+                    _produtoRepositorio.Add(produto);
                 }
                 else
                 {
-                    _context.Entry(produto).State = EntityState.Modified;
+                    _produtoRepositorio.Edit(produto);
                 }
-                _context.SaveChanges();
                 return RedirectToAction("Index");
             }
-            var tipos = _context.TipoDeProdutos.ToList();
+
+            var tipos = _tipoDeProdutoRepositorio.Get();
             ViewBag.Tipos = tipos;
-            return View(produto);
+            return View(produtoVM);
         }
 
         public ActionResult DeleteProduto(int id)
         {
-            var produto = _context.Produtos.Find(id);
+            var produto = _produtoRepositorio.Get(id);
             if (produto == null)
             {
                 return HttpNotFound();
             }
-            _context.Produtos.Remove(produto);
-            _context.SaveChanges();
+            _produtoRepositorio.Delete(produto);
 
 
             return null;
@@ -79,7 +92,8 @@ namespace VF.Store.UI.Controllers
 
         protected override void Dispose(bool disposing)
         {
-            _context.Dispose();
+            _produtoRepositorio.Dispose();
+            _tipoDeProdutoRepositorio.Dispose();
         }
     }
 }
