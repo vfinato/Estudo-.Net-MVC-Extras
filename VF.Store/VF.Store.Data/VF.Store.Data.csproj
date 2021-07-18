@@ -55,6 +55,10 @@
     <Compile Include="EF\Maps\ProdutoMap.cs" />
     <Compile Include="EF\Maps\TipoDeProdutoMap.cs" />
     <Compile Include="EF\Maps\UsuarioMap.cs" />
+    <Compile Include="EF\Repositorios\ProdutoRepositorioEF.cs" />
+    <Compile Include="EF\Repositorios\RepositorioEF.cs" />
+    <Compile Include="EF\Repositorios\TipoDeProdutoRepositorioEF.cs" />
+    <Compile Include="EF\Repositorios\UsuarioRepositorioEF.cs" />
     <Compile Include="EF\VFStoreDataContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -68,6 +72,7 @@
       <Name>VF.Store.Domain</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
