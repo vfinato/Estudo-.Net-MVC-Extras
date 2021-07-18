@@ -2,8 +2,9 @@
 using System.Data.Entity;
 using System.Linq;
 using System.Web.Mvc;
-using VF.Store.UI.Data;
-using VF.Store.UI.Models;
+using VF.Store.Data.EF;
+using VF.Store.Domain.Entities;
+
 
 namespace VF.Store.UI.Controllers
 {

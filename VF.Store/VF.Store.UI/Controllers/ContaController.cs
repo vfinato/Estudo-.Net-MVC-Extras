@@ -1,7 +1,7 @@
 ﻿using System.Linq;
 using System.Web.Mvc;
 using System.Web.Security;
-using VF.Store.UI.Data;
+using VF.Store.Data.EF;
 using VF.Store.UI.Infraestrutura;
 using VF.Store.UI.Models;
 
