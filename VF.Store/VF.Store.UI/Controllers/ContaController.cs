@@ -1,27 +1,33 @@
-﻿using System.Linq;
-using System.Web.Mvc;
+﻿using System.Web.Mvc;
 using System.Web.Security;
-using VF.Store.UI.Data;
+using VF.Store.Data.EF.Repositorios;
+using VF.Store.Domain.Contracts.Repositorios;
+using VF.Store.UI.ViewModels.Conta.Login;
 using VF.Store.UI.Infraestrutura;
-using VF.Store.UI.Models;
+
 
 namespace VF.Store.UI.Controllers
 {
     public class ContaController : Controller
     {
-        private readonly VFStoreDataContext _ctx = new VFStoreDataContext();
+        private readonly IUsuarioRepositorio _usuarioRepositorio;
+
+        public ContaController(UsuarioRepositorioEF usuarioRepositorio)
+        {
+            _usuarioRepositorio = usuarioRepositorio;
+        }
 
         [HttpGet]
         public ActionResult Login(string returnUrl)
         {
-            var model = new LoginVM(){ReturnUrl = returnUrl};
+            var model = new LoginVM{ReturnUrl = returnUrl};
             return View(model);
         }
 
         [HttpPost]
         public ActionResult Login(LoginVM model)
         {
-            var usuario = _ctx.Usuarios.FirstOrDefault(u => u.Email.ToLower() == model.Email.ToLower());
+            var usuario = _usuarioRepositorio.Get(model.Email);
 
             if (usuario == null)
                 ModelState.AddModelError("Email", "Este email não foi localizado");
@@ -55,7 +61,7 @@ namespace VF.Store.UI.Controllers
 
         protected override void Dispose(bool disposing)
         {
-            _ctx.Dispose();
+            _usuarioRepositorio.Dispose();
         }
     }
 }

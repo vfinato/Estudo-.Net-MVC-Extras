@@ -60,6 +60,11 @@ C:\Users\Finato\Documents\Pessoal\VF.Store\VF.Store.UI\bin\System.Web.Razor.dll
 C:\Users\Finato\Documents\Pessoal\VF.Store\VF.Store.UI\bin\System.Web.Webpages.Deployment.dll
 C:\Users\Finato\Documents\Pessoal\VF.Store\VF.Store.UI\bin\System.Web.Webpages.dll
 C:\Users\Finato\Documents\Pessoal\VF.Store\VF.Store.UI\bin\System.Web.Webpages.Razor.dll
+C:\Users\Finato\Documents\Pessoal\VF.Store\VF.Store.UI\bin\VF.Store.Data.dll
+C:\Users\Finato\Documents\Pessoal\VF.Store\VF.Store.UI\bin\VF.Store.Domain.dll
+C:\Users\Finato\Documents\Pessoal\VF.Store\VF.Store.UI\bin\VF.Store.Data.pdb
+C:\Users\Finato\Documents\Pessoal\VF.Store\VF.Store.UI\bin\VF.Store.Data.dll.config
+C:\Users\Finato\Documents\Pessoal\VF.Store\VF.Store.UI\bin\VF.Store.Domain.pdb
 C:\Users\Finato\Documents\Pessoal\VF.Store\VF.Store.UI\bin\EntityFramework.xml
 C:\Users\Finato\Documents\Pessoal\VF.Store\VF.Store.UI\bin\EntityFramework.SqlServer.xml
 C:\Users\Finato\Documents\Pessoal\VF.Store\VF.Store.UI\bin\System.Web.Razor.xml
@@ -80,3 +85,11 @@ C:\Users\Finato\Documents\Pessoal\VF.Store\VF.Store.UI\obj\Debug\VF.Store.UI.csp
 C:\Users\Finato\Documents\Pessoal\VF.Store\VF.Store.UI\obj\Debug\VF.Store.UI.csproj.CopyComplete
 C:\Users\Finato\Documents\Pessoal\VF.Store\VF.Store.UI\obj\Debug\VF.Store.UI.dll
 C:\Users\Finato\Documents\Pessoal\VF.Store\VF.Store.UI\obj\Debug\VF.Store.UI.pdb
+C:\Users\Finato\Documents\Pessoal\VF.Store\VF.Store.UI\bin\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Finato\Documents\Pessoal\VF.Store\VF.Store.UI\bin\Unity.Abstractions.dll
+C:\Users\Finato\Documents\Pessoal\VF.Store\VF.Store.UI\bin\Unity.Container.dll
+C:\Users\Finato\Documents\Pessoal\VF.Store\VF.Store.UI\bin\Unity.Mvc5.dll
+C:\Users\Finato\Documents\Pessoal\VF.Store\VF.Store.UI\bin\System.Threading.Tasks.Extensions.dll
+C:\Users\Finato\Documents\Pessoal\VF.Store\VF.Store.UI\bin\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Finato\Documents\Pessoal\VF.Store\VF.Store.UI\bin\Unity.Abstractions.pdb
+C:\Users\Finato\Documents\Pessoal\VF.Store\VF.Store.UI\bin\Unity.Container.pdb

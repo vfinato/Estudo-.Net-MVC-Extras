@@ -1,4 +1,4 @@
-﻿@using VF.Store.UI.Models
+﻿@using VF.Store.UI.ViewModels.Produtos.Index
 
 @{
     ViewBag.Title = "Todos os Produtos";
@@ -23,12 +23,12 @@
             </tr>
         </thead>
         <tbody>
-            @foreach (var p in Model)
+            @foreach (ProdutoIndexVM p in Model)
             {
                 <tr id="produto-@p.Id">
                     <td>@p.Nome</td>
                     <td>@p.Preco.ToString("C2")</td>
-                    <td>@p.TipoDeProduto.Nome</td>
+                    <td>@p.Tipo</td>
                     <td>@p.Quantidade</td>
                     <td>@p.DataCadastro</td>
                     <td>

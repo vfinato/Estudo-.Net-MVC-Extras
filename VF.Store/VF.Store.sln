@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VF.Store.Domain", "VF.Store
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VF.Store.Data", "VF.Store.Data\VF.Store.Data.csproj", "{B1FFE9E9-EC12-4CC2-8195-DE25707CA8F2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VF.Store.Tests", "VF.Store.Tests\VF.Store.Tests.csproj", "{0C8EA5CD-2949-44D0-B0B5-C883E2E32130}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{B1FFE9E9-EC12-4CC2-8195-DE25707CA8F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B1FFE9E9-EC12-4CC2-8195-DE25707CA8F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B1FFE9E9-EC12-4CC2-8195-DE25707CA8F2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0C8EA5CD-2949-44D0-B0B5-C883E2E32130}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C8EA5CD-2949-44D0-B0B5-C883E2E32130}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C8EA5CD-2949-44D0-B0B5-C883E2E32130}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C8EA5CD-2949-44D0-B0B5-C883E2E32130}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
