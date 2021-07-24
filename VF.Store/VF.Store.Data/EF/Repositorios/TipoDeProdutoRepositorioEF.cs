@@ -5,6 +5,8 @@ namespace VF.Store.Data.EF.Repositorios
 {
     public class TipoDeProdutoRepositorioEF : RepositorioEF<TipoDeProduto>, ITipoDeProdutoRepositorio
     {
-        
+        public TipoDeProdutoRepositorioEF(VFStoreDataContextEF ctx) : base(ctx)
+        {
+        }
     }
 }

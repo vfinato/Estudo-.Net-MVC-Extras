@@ -3,9 +3,9 @@ using VF.Store.Domain.Entities;
 
 namespace VF.Store.Data.EF
 {
-    public class VFStoreDataContext:DbContext
+    public class VFStoreDataContextEF:DbContext
     {
-        public VFStoreDataContext():base("StoreConn")
+        public VFStoreDataContextEF():base("StoreConn")
         {
             Database.SetInitializer(new DbInitializer());
         }

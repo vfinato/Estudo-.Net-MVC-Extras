@@ -8,7 +8,12 @@ namespace VF.Store.Data.EF.Repositorios
 {
     public class RepositorioEF<T> : IRepositorio<T> where T : Entity
     {
-        protected readonly VFStoreDataContext _ctx = new VFStoreDataContext();
+        protected readonly VFStoreDataContextEF _ctx;
+
+        public RepositorioEF(VFStoreDataContextEF ctx)
+        {
+            _ctx = ctx;
+        }
 
         private void Save()
         {
@@ -45,7 +50,6 @@ namespace VF.Store.Data.EF.Repositorios
 
         public void Dispose()
         {
-            _ctx.Dispose();
         }
     }
 }

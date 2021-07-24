@@ -10,6 +10,10 @@ namespace VF.Store.Data.EF.Repositorios
 {
     public class UsuarioRepositorioEF : RepositorioEF<Usuario>, IUsuarioRepositorio
     {
+        public UsuarioRepositorioEF(VFStoreDataContextEF ctx) : base(ctx)
+        {
+        }
+
         public Usuario Get(string email)
         {
             return _ctx.Usuarios.FirstOrDefault(u => u.Email.ToLower() == email.ToLower());

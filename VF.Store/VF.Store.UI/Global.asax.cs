@@ -1,6 +1,6 @@
 using System.Web.Mvc;
 using System.Web.Routing;
-using VF.Store.UI.Infraestrutura;
+
 
 namespace VF.Store.UI
 {
@@ -11,7 +11,6 @@ namespace VF.Store.UI
             AreaRegistration.RegisterAllAreas();
             UnityConfig.RegisterComponents();
             RouteConfig.RegisterRoutes(RouteTable.Routes);
-            ModelBinders.Binders.Add(typeof(decimal?), new DecimalModelBinder());
         }
     }
 }

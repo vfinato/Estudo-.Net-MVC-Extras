@@ -2,8 +2,8 @@
 using System.Web.Security;
 using VF.Store.Data.EF.Repositorios;
 using VF.Store.Domain.Contracts.Repositorios;
+using VF.Store.Domain.Helpers;
 using VF.Store.UI.ViewModels.Conta.Login;
-using VF.Store.UI.Infraestrutura;
 
 
 namespace VF.Store.UI.Controllers
@@ -61,7 +61,6 @@ namespace VF.Store.UI.Controllers
 
         protected override void Dispose(bool disposing)
         {
-            _usuarioRepositorio.Dispose();
         }
     }
 }

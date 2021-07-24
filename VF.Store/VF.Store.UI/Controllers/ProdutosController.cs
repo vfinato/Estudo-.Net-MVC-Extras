@@ -92,8 +92,6 @@ namespace VF.Store.UI.Controllers
 
         protected override void Dispose(bool disposing)
         {
-            _produtoRepositorio.Dispose();
-            _tipoDeProdutoRepositorio.Dispose();
         }
     }
 }

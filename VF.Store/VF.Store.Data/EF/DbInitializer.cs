@@ -5,9 +5,9 @@ using VF.Store.Domain.Helpers;
 
 namespace VF.Store.Data.EF
 {
-    internal class DbInitializer:CreateDatabaseIfNotExists<VFStoreDataContext>
+    internal class DbInitializer:CreateDatabaseIfNotExists<VFStoreDataContextEF>
     {
-        protected override void Seed(VFStoreDataContext context)
+        protected override void Seed(VFStoreDataContextEF context)
         {
             var alimento = new TipoDeProduto() {Nome = "Alimento"};
             var higiene = new TipoDeProduto() { Nome = "Higiene" };
